@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CALCULATOR | 🧮</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- <h1>project-1 building od calculator</h1> -->
+	<div class="cal-container">
+		<input type="text" placeholder="0" name="" id="input">
+		<div class="row">
+			<button class="btn" onclick="clr()">AC</button>
+			<button onclick="show('00')">00</button>
+			<button onclick="show('000')">000</button>
+			<button class="btn" onclick="remove()">DEL</button>
+		</div>
+		<div class="row">
+			<button onclick="show('7')">7</button>
+			<button onclick="show('8')">8</button>
+			<button onclick="show('9')">9</button>
+			<button class="btn"  onclick="show('/')">/</button>
+		</div>
+		<!-- ---------------------------row-1 completed------------------------------- -->
+		<div class="row">
+			<button onclick="show('4')">4</button>
+			<button onclick="show('5')">5</button>
+			<button onclick="show('6')">6</button>
+			<button class="btn" onclick="show('*')">x</button>
+		</div>
+		<!-- ---------------------------row-2 completed------------------------------- -->
+
+		<div class="row">
+			<button onclick="show('1')">1</button>
+			<button onclick="show('2')">2</button>
+			<button onclick="show('3')">3</button>
+			<button class="btn" onclick="show('-')">-</button>
+		</div>
+		<!-- ---------------------------row-3 completed------------------------------- -->
+
+		<div class="row">
+			<button onclick="show('0')">0</button>
+			<button onclick="show('.')">.</button>
+			<button onclick="show('+')">+</button>
+			<button class="btn" onclick="calculate()">=</button>
+		</div>
+		<!-- ---------------------------row-4 completed------------------------------- -->
+
+
+	</div>
+
+
+
+	<script src="app.js"></script>
+</body>
+</html>
